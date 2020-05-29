@@ -18,7 +18,7 @@ void clear(void)
 This container was designed to make iteration cheap and efficient. The internal structure is a set of linked nodes, which allows the iterator to just contain a pointer to the current node. This implementaion avoids wasting memory by creating a stack of elements to visit in the future, which becomes more costly the larger the tree and only compounds with more iterators.
 
 ### Internal Structure
-The basic building block of a generic tree is a ```Node```. ```Node```'s are allocated on the heap and contain the data of the container as well as pointers to the next, parent, and first child ```Node```. Only the last child in a list of siblings has the pointer to the parent ```Node```, as shown below.
+The basic building block of the ```Tree``` class is a ```Node```. ```Node```'s are allocated on the heap and contain the data of the container as well as pointers to the next, parent, and first child ```Node```. Only the last child in a list of siblings has the pointer to the parent ```Node```, as shown below.
 ```
             ---------------(Parent Node) <------------------
             |                                              |
