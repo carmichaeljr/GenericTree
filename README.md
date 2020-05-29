@@ -25,3 +25,6 @@ The basic building block of a generic tree is a ```Node```. ```Node```'s are all
            \/                                              |
     (Child Node 1) ---> (Child Node 2) -> ... ---> (Last Child Node)
 ```
+
+### Use
+This class requires C++11 or greater. There are no dependencies outside of the files listed in the repository. To use the class just place the repositories files in the same directory as the rest of your source files, and include the ```Tree.hpp``` file in your code as needed.
