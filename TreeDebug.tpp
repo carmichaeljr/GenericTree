@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Print.hpp"
 
 template <typename T>
 Tree<T>::TreeDebug::TreeDebug(void){
@@ -9,7 +8,10 @@ Tree<T>::TreeDebug::TreeDebug(void){
 template <typename T>
 bool Tree<T>::TreeDebug::run(void){
 	this->success=(this->debugObjectMethods());//this->debugClassMethods()
-	Print::objectDebug(std::cout,"Tree",this->success);
+	
+	std::cout << "[" << std::left << std::setw(5) << ((this->success)? "OK": "Error") << std::setw(0);
+	std::cout << "]: " << "Tree" << " class" << std::endl;
+
 	return this->success;
 }
 
